@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+img {
+    width: 70%;
+}
+
+.carousel{
+    width: 100%;
+    position: relative;
+}
+.slides ul, li{
+    width: 100%;
+}
+.slides li img{
+    width: 100%;
+}
+
+.pagination {
+    position: absolute;
+}
+.left, .right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
