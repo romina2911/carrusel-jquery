@@ -37,5 +37,12 @@ $(document).ready(loadPage);
         showImage(target);
     }
 
+    var showImage = function (target) {
+        var $lastSlide = $("div.active");
+        var $slide = $("div[data-slide= '" + target + "']");
+        $lastSlide.removeClass("active");
+        $slide.addClass("active");
+    }
+
 
 
