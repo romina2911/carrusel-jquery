@@ -6,36 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>carrusel</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet"> 
-    <link rel="stylesheet" href="vendors/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+  
 </head>
 <body>
-    <div class="carousel">
-        <ul class="slides">
-            <li><img src="assets/images/catmiguelangel.jpg" alt="miguelangelo-cat"></li>
-            <li><img src="assets/images/catzilla.jpg" alt="catzilla"></li>
-            <li><img src="assets/images/catshell.jpg" alt="catshell"></li>
-            <li><img src="assets/images/catquerubin.jpg" alt="cat-querubin"></li>
-        </ul>
-        <ol class="pagination">
-            <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-            <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-            <li><i class="fa fa-circle" aria-hidden="true"> </i></li>
-            <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-        </ol>
+<main>
+   <h1>Fat Cat Art</h1>
+   <section>
+       <div data-slide="0" class="carousel-content active">
+           <img src="assets/images/catmiguelangel.jpg" alt="gato miguelangel">
+       </div>
+       <div data-slide="1" class="carousel-content">
+        <img src="assets/images/catquerubin.jpg" alt="gato querubin">
+       </div>
+       <div data-slide="2" class="carousel-content">
+        <img src="assets/images/catshell.jpg" alt="gato shell">
+       </div>
+       <div data-slide="3" class="carousel-content">
+        <img src="assets/images/catzilla.jpg" alt="catzilla">
+       </div>
+   </section>
+   <section>
+       <a href="#" class="previous active"></a>
+       <button data-target="0" class="control" type="button"></button>
+       <button data-target="2" class="control" type="button"></button>
+       <button data-target="3" class="control" type="button"></button>
+       <button data-target="4" class="control" type="button"></button>
+       <a href="·" class="next"></a>
+   </section>
+</main>
 
-        <div class="left">
-            <span class="fa fa-chevron-left"></span>
-        </div>
-        <div class="right">
-                <span class="fa fa-chevron-right"></span>
-            </div>
 
-    </div>
-    
-
-
-    <script src='jquery-3.2.1.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/app.js"></script>
     
 </body>
